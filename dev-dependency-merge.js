@@ -34,5 +34,5 @@ module.exports.remove = function(dest, done){
 
 /* istanbul ignore if */
 if(require.main === module){
-  start(process.argv.slice(2));
+  start(process.argv.slice(2), function(){});
 }
