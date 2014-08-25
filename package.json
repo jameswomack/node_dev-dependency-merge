@@ -1,0 +1,37 @@
+{
+  "name": "dev-dependency-merge",
+  "version": "1.0.0-alpha",
+  "description": "Merges devDependencies from one package to another",
+  "main": "dev-dependency-merge.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "~1.9.1",
+    "gulp": "~3.8.7",
+    "gulp-jshint": "~1.8.4",
+    "gulp-todo": "~0.4.2",
+    "istanbul": "~0.3.0",
+    "jshint-stylish": "~0.4.0",
+    "sinon": "~1.10.3",
+    "sinon-chai": "~2.5.0",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "sinon-chai": "~2.5.0",
+    "sinon": "~1.10.3",
+    "chai": "~1.9.1",
+    "istanbul": "~0.3.0",
+    "gulp": "~3.8.7",
+    "gulp-todo": "~0.4.2",
+    "gulp-jshint": "~1.8.4",
+    "glob": "~4.0.5",
+    "gulp-clean": "~0.3.1"
+  },
+  "scripts": {
+    "test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test --recursive && gulp jshint"
+  },
+  "author": "James J. Womack",
+  "license": "ISC"
+}
