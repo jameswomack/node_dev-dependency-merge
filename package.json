@@ -19,7 +19,8 @@
     "gulp-todo": "~0.4.2",
     "gulp-jshint": "~1.8.4",
     "glob": "~4.0.5",
-    "gulp-clean": "~0.3.1"
+    "gulp-clean": "~0.3.1",
+    "jshint-stylish": "~0.4.0"
   },
   "scripts": {
     "test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test --recursive && gulp jshint"
